@@ -22,3 +22,10 @@ steps:
     PathtoPublish: '/home/vsts/work/1/s/target/helloworld.war'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Visual Studio Enterprise Subscription (ade4fbd5-2469-42fc-9a8c-5bffb1be9fcf)'
+    appType: 'webAppLinux'
+    appName: 'az400demopiplinewebApp'
+    package: '/home/vsts/work/1/s/target/helloworld.war'
