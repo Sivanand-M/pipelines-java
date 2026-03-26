@@ -1,6 +1,6 @@
 # Maven Build Pipeline
 trigger:
-- main
+- main1
 
 pool:
   vmImage: ubuntu-latest
@@ -19,6 +19,6 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'target/*.war'
+    PathtoPublish: '/home/vsts/work/1/s/target/helloworld.war'
     ArtifactName: 'drop'
     publishLocation: 'Container'
