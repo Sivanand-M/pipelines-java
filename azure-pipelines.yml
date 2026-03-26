@@ -27,5 +27,5 @@ steps:
   inputs:
     azureSubscription: 'azure-UMI'
     appType: 'webAppLinux'
-    appName: 'az400demopiplinewebApp'
+    appName: 'az400DemoPipelineWebApp'
     package: '/home/vsts/work/1/s/target/helloworld.war'
