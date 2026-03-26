@@ -5,6 +5,7 @@
 
 trigger:
 - main
+#Sample comment
 
 pool:
   vmImage: ubuntu-latest
